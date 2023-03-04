@@ -1,0 +1,7 @@
+.cell {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    box-shadow: inset 0px -1px 0px 0px rgb(108 89 89 / 50%), 10px 10px 15px rgb(255 255 255 / 12%);
+}
