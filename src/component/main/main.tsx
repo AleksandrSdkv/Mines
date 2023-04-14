@@ -1,10 +1,11 @@
+import React from 'react';
 import Cell from './cell/cell';
 import './main.css'
 function Main() {
-    const n = Array(256).fill(0)
-    n.fill(0, 0, 256)
-    function click(e) {
-        console.log(n)
+
+    function createField(size: number): number[] {
+        const field: number[] = new Array(size * size).fill(0);
+        return field
 
     }
     return (
@@ -16,7 +17,7 @@ function Main() {
                     <div>score</div>
                 </div>
                 <ul className='main__cells'>
-                    {n.map((e, index) => <Cell click={click} key={index} />)}
+
                 </ul>
             </div>
         </main>
